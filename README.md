@@ -172,3 +172,14 @@ capstone/
     ├── test_langgraph_orchestration.py  # Checkpointing & parallel execution tests
     └── test_fused_traces.py       # Fused audit queries & topology cost tests
 ```
+
+## Reproducible evaluation
+
+Run the automated checks and deterministic topology comparison from the repository root:
+
+```powershell
+python -m pytest tests -q
+python scripts/run_evaluation.py --repeats 5
+```
+
+The evaluation writes `results/raw_runs.csv`, `results/summary.json`, and `results/metadata.json`. It compares the monolithic, sequential, and parallel-supervisor topologies over four fixed local scenarios. Token and cost values are illustrative code-generated estimates; no LLM provider is called. The completed capstone report is available at [`output/pdf/OrchTrace_Final_Project_Report.pdf`](output/pdf/OrchTrace_Final_Project_Report.pdf).
