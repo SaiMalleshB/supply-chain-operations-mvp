@@ -10,19 +10,21 @@ The screenshots below show the MVP running locally. Traceability is available as
 
 ![Mission Control scenario setup](screenshots/mission-control.jpg)
 
-![Mission Control completed orchestration](screenshots/mission-control-results.jpg)
+![Mission Control completed orchestration](screenshots/mission-control-run.png)
+
+![Orchestration summary, specialist results, and risk score](screenshots/orchestration-summary.png)
 
 ### Data Sources
 
-![Data Sources catalog and source map](screenshots/data-sources.jpg)
+![Data Sources catalog and source map](screenshots/data-sources.png)
 
 ### Reliability
 
-![Reliability outcomes and safeguards](screenshots/reliability.jpg)
+![Reliability outcomes and safeguards](screenshots/reliability.png)
 
 ### Traceability
 
-![Traceability run details and execution units](screenshots/traceability.jpg)
+![Traceability run details and execution units](screenshots/traceability.png)
 
 ## MVP scope
 
