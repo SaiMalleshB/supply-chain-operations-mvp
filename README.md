@@ -2,6 +2,28 @@
 
 A local-first prototype for supply chain incident analysis. It runs a Streamlit dashboard with seeded SQLite catalog data, deterministic specialist agents, risk scoring, and run traces.
 
+## Dashboard screenshots
+
+The screenshots below show the MVP running locally. Traceability is available as its own page so run actions and evidence can be inspected separately from the operational overview.
+
+### Mission Control
+
+![Mission Control scenario setup](screenshots/mission-control.jpg)
+
+![Mission Control completed orchestration](screenshots/mission-control-results.jpg)
+
+### Data Sources
+
+![Data Sources catalog and source map](screenshots/data-sources.jpg)
+
+### Reliability
+
+![Reliability outcomes and safeguards](screenshots/reliability.jpg)
+
+### Traceability
+
+![Traceability run details and execution units](screenshots/traceability.jpg)
+
 ## MVP scope
 
 - No API key, Docker service, or network connection is needed for the default local run.
@@ -99,6 +121,7 @@ Run the unit and integration tests covering risk engine math, MCP boundaries, La
 ```
 capstone/
 ├── README.md                      # Project architecture & setup documentation
+├── screenshots/                   # Captured dashboard views used in this README
 ├── requirements.txt               # Pinned Python package dependencies
 ├── docker-compose.yml             # PostgreSQL 16 + pgvector container definition
 ├── data/
